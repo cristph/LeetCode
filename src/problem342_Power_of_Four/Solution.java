@@ -15,7 +15,7 @@ public class Solution {
             }else{
                 boolean res=true;
                 int i=1;
-                for(i=1;i<length-1;i++){
+                for(i=1;i<length;i++){
                     if(s0.charAt(i)=='1'){
                         res=false;
                         break;
@@ -28,6 +28,7 @@ public class Solution {
 
     public static void main(String args[]){
         Solution solution=new Solution();
+        System.out.println(solution.isPowerOfFour(5));
         System.out.println(solution.isPowerOfFour(25));
         System.out.println(solution.isPowerOfFour(256));
     }
